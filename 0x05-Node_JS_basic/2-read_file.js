@@ -31,13 +31,13 @@ function countStudents(fileName) {
   const csStudents = dataObject.filter((student) => student.field === 'CS');
   const noOfStudsCS = csStudents.length;
   csData = csStudents.map((obj) => obj.firstname).join(', ');
-  console.log(`Number of studdents in CS: ${noOfStudsCS}. List: ${csData}`);
+  console.log(`Number of students in CS: ${noOfStudsCS}. List: ${csData}`);
 
   let sweData = [];
   const swe = dataObject.filter((student) => student.field === 'SWE');
   const noOfstdSWE = swe.length;
   sweData = swe.map((obj) => obj.firstname).join(', ');
-  console.log(`Number of studdents in CS: ${noOfstdSWE}. List: ${sweData}`);
+  console.log(`Number of students in SWE: ${noOfstdSWE}. List: ${sweData}`);
 }
 
 module.exports = countStudents;
